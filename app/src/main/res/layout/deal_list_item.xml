@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/deal_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white_color">
+
+    <ImageView
+            android:id="@+id/deal_list_item_image_view"
+            android:layout_width="@dimen/deal_list_item_image_size"
+            android:layout_height="@dimen/deal_list_item_image_size"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:src="@drawable/ic_launcher_foreground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+            android:id="@+id/deal_list_item_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:maxLines="2"
+            android:paddingEnd="@dimen/_8dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/deal_list_item_image_view"
+            app:layout_constraintTop_toTopOf="@+id/deal_list_item_image_view"/>
+
+    <View
+            android:id="@+id/title_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:background="@color/title_div_color"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_list_item_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/deal_list_item_image_view"
+            app:layout_constraintTop_toTopOf="@+id/deal_list_item_image_view">
+    </View>
+
+    <TextView
+            android:id="@+id/deal_list_item_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginTop="@dimen/_8dp"
+            android:layout_marginBottom="@dimen/_8dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_16sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_list_item_image_view"
+            app:layout_constraintStart_toEndOf="@+id/deal_list_item_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/title_divider"/>
+
+    <TextView
+            android:id="@+id/deal_list_item_ship"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_8dp"
+            android:text="@string/ship"
+            android:textColor="@color/text_color_thick"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_list_item_image_view"
+            app:layout_constraintEnd_toStartOf="@+id/deal_list_item_or"
+            app:layout_constraintTop_toBottomOf="@+id/title_divider"/>
+
+    <TextView
+            android:id="@+id/deal_list_item_or"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:paddingEnd="@dimen/_8dp"
+            android:text="@string/or"
+            android:textColor="@color/text_color_thick"
+            android:textSize="@dimen/_12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_list_item_image_view"
+            app:layout_constraintEnd_toStartOf="@+id/deal_list_item_aisle"
+            app:layout_constraintTop_toBottomOf="@+id/title_divider"/>
+
+    <TextView
+            android:id="@+id/deal_list_item_aisle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
+            android:background="@drawable/circle_bg"
+            android:gravity="center"
+            android:padding="@dimen/_5dp"
+            android:text="@string/or"
+            android:textColor="@color/action_color"
+            android:textSize="@dimen/_14sp"
+            app:layout_constraintBottom_toBottomOf="@+id/deal_list_item_image_view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title_divider"/>
+
+    <View
+            android:id="@+id/item_divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/_16dp"
+            android:background="@color/item_div_color"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deal_list_item_image_view">
+    </View>
+</androidx.constraintlayout.widget.ConstraintLayout>

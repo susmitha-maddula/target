@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="deal_list_item_image_size">80dp</dimen>
+    <dimen name="_16dp">16dp</dimen>
+    <dimen name="_5dp">5dp</dimen>
+    <dimen name="_8dp">5dp</dimen>
+    <dimen name="_24sp">24sp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_8sp">8sp</dimen>
+    <dimen name="_80dp">80dp</dimen>
+    <dimen name="_48dp">48dp</dimen>
+    <dimen name="_12sp">12sp</dimen>
+    <dimen name="_14sp">14sp</dimen>
+
+</resources>
